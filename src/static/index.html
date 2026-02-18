@@ -13,8 +13,19 @@
     </header>
 
     <main>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
+        <div id="activities-controls" style="margin-bottom: 16px;">
+          <input type="text" id="activity-search" placeholder="Search activities..." style="padding:6px; width: 180px; margin-right: 8px;" />
+          <select id="activity-category-filter" style="padding:6px; margin-right: 8px;">
+            <option value="">All Categories</option>
+          </select>
+          <select id="activity-sort" style="padding:6px;">
+            <option value="name">Sort by Name</option>
+            <option value="spots">Sort by Spots Left</option>
+          </select>
+        </div>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
           <p>Loading activities...</p>
